@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Div e Section</title>
+    <style>
+      /* Estilo para a section */
+section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Estilo para a div */
+.card {
+    background-color: #e0e0e0;
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+  .favorito {
+    width: 216px;
+    height: 209px;
+    background-color: #1409093d; /* Cor de fundo */
+    padding: 20px;            /* Espaçamento interno */
+    border-radius: 8px;       /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+#somos{
+  background-color: rgba(0, 0, 0, 0.381);
+}
+.nav{
+  text-align: center;
+ 
+}
+.nav:hover{
+  color: yellow;
+  transition: 0.1s linear;
+}
+#produto{
+  text-align: center;
+  width: 216px;
+    height: 209px;
+    background-color: #1409093d; /* Cor de fundo */
+    padding: 20px;            /* Espaçamento interno */
+    border-radius: 8px;       /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+.list{
+  background-color: rgba(0, 0, 0, 0.185);
+    margin: 9px;
+    padding: 1.3px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    width: 276px;
+    height: 164px;
+}
+.bottom{
+  margin-bottom: 2.5/*  a  */;
+}
+.bottom:hover{
+  color: rgba(144, 107, 39, 0.592);
+}
+    </style>
+</head>
+<body>
+    <!-- Usando Section -->
+    <section id="somos">
+        <h2 class="nav">Sobre Nós</h2>
+        <p class="nav">Somos uma empresa dedicada a oferecer os melhores serviços para nossos clientes.</p>
+    </section>
+
+    <!-- Usando Div -->
+    <div class="card">
+        <h3>Produto</h3>
+        <p>Este é um exemplo de um produto.</p>
+    </div>
+    <section id="produto">
+      <h2>Produto Incrível</h2>
+      <div class="produto">
+          <img src="produto.jpg" alt="Imagem do produto">
+          <p>Descrição do produto.</p>
+      </div>
+  </section>
+  <section>
+    <h2>Nossos Favoritos</h2>
+    <div class="card">
+        <img src="produto1.jpg" alt="Produto 1">
+        <p>Produto 1 - Descrição.</p>
+    </div>
+    <div class="card">
+        <img src="produto2.jpg" alt="Produto 2">
+        <p>Produto 2 - Descrição.</p>
+    </div>
+</section>
+<section class="favorites">
+  <h1>Comidas Prediletas dos Nossos Clientes</h1>
+  <div class="list">
+      <ul>
+          <li class="bottom">Pizza de Calabresa</li>
+          <li class="bottom">Filé à Parmegiana</li>
+          <li class="bottom">Risoto de Camarão</li>
+          <li class="bottom">Hambúrguer Artesanal</li>
+          <li class="bottom">Sorvete de Chocolate</li>
+      </ul>
+  </div>
+</section>
+
+</body>
+</html>

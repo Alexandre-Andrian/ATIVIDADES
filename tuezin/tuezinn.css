@@ -1,0 +1,19 @@
+body {
+    background-color: black; /* Cor de fundo preta */
+    margin: 0; /* Remove margens padrão */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    color: #333; /* Cor do texto */
+}
+ 
+h1 {
+    font-family: Arial;
+    font-size: 36px; /* Tamanho do título */
+    color: mediumpurple; /* Cor do título */
+}
+
+p {
+    color: blueviolet; /* Cor do texto do parágrafo */
+    font-size: 14px; /* Tamanho da fonte do parágrafo */
+}
+
+/* A cor do símbolo copyright pode ser ajustada conforme necessário */

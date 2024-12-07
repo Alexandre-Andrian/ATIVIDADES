@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #343232;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <h1>Cadastro</h1>
+        </center>
+    
+        <label>Email:</label>
+        <input type="text" name="email" id="email"/>
+        <br><br>
+        
+        <label>Senha:</label>
+        <input type="password" name="password" id="password"/>
+        <br><br>
+        
+        <label>País:</label>
+        <select name="pais" id="pais">
+            <option value="">Selecione seu país</option>
+            <option value="brasil">Brasil</option>
+            <option value="argentina">Argentina</option>
+            <option value="portugal">Portugal</option>
+            <option value="rio_de_janeiro">Rio de Janeiro</option>
+            <option value="franca">França</option>
+            <option value="china">China</option>
+            <option value="russia">Rússia</option>
+        </select>
+        <br><br>
+        
+        <button onclick="mostrarAlerta()">Confirmar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>  
+        <h1>Cadastro</h1>
+        <label>Email:</label>
+        <input type="text" name="email" id="email"/>
+        <br><br>
+        
+        <label>Senha:</label>
+        <input type="password" name="password" id="password"/>
+        <br><br>
+        
+        <label>País:</label>
+        <select name="pais" id="pais">
+            <option value="">Selecione seu país</option>
+            <option value="brasil">Brasil</option>
+            <option value="argentina">Argentina</option>
+            <option value="portugal">Portugal</option>
+            <option value="rio_de_janeiro">Rio de Janeiro</option>
+            <option value="franca">França</option>
+            <option value="china">China</option>
+            <option value="russia">Rússia</option>
+        </select>
+        <br><br>
+        
+        <button onclick="mostrarAlerta()">Confirmar</button>
+    </center>
+
+    <script src="script.js"></script>
+</body>
+</html>
+-->
+
+<!--js 
+function mostrarAlerta() {
+    const paisSelecionado = document.getElementById('pais').value;
+    
+    if (paisSelecionado) {
+        // Simulando uma verificação de usuário existente
+        const usuariosCadastrados = {
+            brasil: true,
+            argentina: false,
+            portugal: false,
+            rio_de_janeiro: true,
+            franca: false,
+            china: false,
+            russia: true
+        };
+
+        // Verifica se já existe um usuário cadastrado para o país selecionado
+        if (usuariosCadastrados[paisSelecionado]) {
+            // Redireciona para a página de erro
+            window.location.href = 'pagina/erro.html';
+        } else {
+            // Aqui você pode prosseguir com o cadastro
+            alert("Cadastro realizado com sucesso!");
+        }
+    } else {
+        alert("Por favor, selecione um país.");
+    }
+}
+
+-->
+
+
+<!--.alerta {
+    background-color: #ffdddd;
+    border: 1px solid rgb(251, 238, 238);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+body {
+    background-color: rgba(247, 246, 246, 0.99);
+}
+
+
+label{
+    font-family: arial;
+}-->

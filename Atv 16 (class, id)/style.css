@@ -1,0 +1,43 @@
+@charset "UTF-08";
+
+body{
+    background-color: rgb(143, 212, 143);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#principal{
+
+    text-align: center;
+    text-shadow: 1px 1px 2px azure;
+    color: rgb(0, 0, 0);
+
+}
+.segundario{
+    text-align: center;
+    text-shadow: azure;
+}
+.basico{
+    color: red;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.intermediario{
+    text-align: left;
+    color: aqua;
+    text-shadow: 1px 1px 1px black;
+}
+.avancado{
+    text-shadow: 1px 1px 2px black;
+    color: pink;
+}
+#terciario{
+    text-align: center;
+    text-shadow: 2px 2px 3px white;
+    color: rebeccapurple;
+    font-size: 1.7em;
+}
+#css{
+    text-align: center;
+    color: white;
+    font-size: 1.7em;
+    text-shadow: 2px 2px 3px black;
+}

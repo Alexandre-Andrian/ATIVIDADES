@@ -1,0 +1,33 @@
+h1{
+    font-family: Arial;
+    font-size: 42px;
+    color: green;
+}
+h2{
+    font-family: Georgia;
+    font-size: 36px;
+    color: white;
+
+}
+p{
+    font-family: verdana;
+    font-size: 19px;
+    color: yellowgreen;
+
+}
+h3{
+    font-family: Arial;
+    font-size: 41px;
+    color: blue;
+
+}
+ul{
+    font-size: 20px;
+
+
+}
+li{
+
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tags de agrupamento</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(19, 13, 13, 0.187);
+            margin: 0px;
+        }
+       
+        
+        h3,h1{
+            text-align: center;
+        }
+        header{
+           
+            width: 1890px;
+            background-color: rgba(255, 255, 255, 0.769);
+            padding: 10px;       
+            margin: 0px;
+            height: 100px;
+        
+        }
+        nav{
+            background-color: rgb(255, 255, 255);
+            padding: 2px;
+            text-align: center;
+            box-shadow:  1px 1px 2px rgba(0, 0, 0, 0.305);
+            border-radius: 7px;
+        }
+        nav >a{
+            text-decoration: none;
+            color: rgb(49, 49, 194);
+            font-weight: bold;
+            margin-right: 100px;
+            text-align: center;
+            ;
+        }
+        nav >a:hover{ 
+            
+            color: rgb(0, 0, 0);
+            transition: 5s, linear ;
+
+        }
+        main{
+            background-color: aliceblue;
+            padding: 10px;       
+            margin: 10px;
+            border-radius: 20px 0px;
+
+        }
+        footer{ 
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        article{
+            background-color: rgb(233, 223, 223);
+            padding: 4px;
+            margin: 3px;
+            border-radius: 30px 0px;
+            box-shadow: 3px 3px 6px solid
+            black;
+           
+            
+        }
+        article>aside{
+            background-color: rgb(232, 171, 171);
+            width: 240px;
+            height: 21px;
+            margin: 0px;
+            text-align: end;
+        }
+        div#bola{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 3px 3px 100px solid
+            black;
+        }
+    </style>
+</head>
+ <!-- body
+  header>nav>a
+  main> (conteudo principal)
+  section>
+-->
+<body> 
+    <header>
+        <H1>Meu Site</H1>
+        <nav>
+            <a href="#">Saiba Mais</a>
+            <a href="#">Contato</a>
+            <a href="#">Login</a>
+            <a href="#">Cadastro</a>
+            <a href="#">Email</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esporte Politica e Tecnologia </p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h3>Noticias do brasil</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita maxime commodi inventore, asperiores ipsa excepturi consectetur eius enim eveniet. Perspiciatis repudiandae iure omnis voluptatum quisquam facere corrupti nemo tempora iusto.</p>
+                <aside>
+                   
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <P>desenvolvido por mim</P>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

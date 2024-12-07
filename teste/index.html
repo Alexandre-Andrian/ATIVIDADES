@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relacionamento Abusivo</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .yes {
+            background-color: #4caf50;
+            color: white;
+        }
+        .no {
+            background-color: #f44336;
+            color: white;
+        }
+        img {
+            max-width: 300px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>quer ir pro motel comigo?</h1>
+    <div class="buttons">
+        <button class="yes" onclick="sayYes()">Sim</button>
+        <button class="no" onmouseover="moveNo()">Não</button>
+    </div>
+    <script>
+        const noButton = document.querySelector('.no');
+
+        function moveNo() {
+            const x = Math.random() * window.innerWidth * 0.8; // Limita a posição para não sair da tela
+            const y = Math.random() * window.innerHeight * 0.8;
+            noButton.style.position = 'absolute';
+            noButton.style.left = `${x}px`; // Corrigido: agora está dentro de uma string template
+            noButton.style.top = `${y}px`;
+        }
+
+        function sayYes() {
+            document.body.innerHTML = `
+                <h1>Quer tomar tapa ne dlc? aiai </h1>
+                <img src="MEME.png" alt="Imagem de exemplo">
+                
+               <audio id="audio" autoplay controls >
+                    <source src="chavinhos.mp3" type="audio/mp3">
+                    Seu navegador não suporta a reprodução de áudio.
+                </audio>
+            `;
+        }
+    </script>
+</body>
+</html

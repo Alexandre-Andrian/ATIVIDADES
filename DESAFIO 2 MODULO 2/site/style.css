@@ -1,0 +1,170 @@
+/* CSS para Responsividade */
+@charset "UTF-8";
+
+img {
+    width: 100%; /* A largura da imagem será igual à do elemento pai */
+    height: auto; /* Mantém a proporção da imagem */
+}
+.bugdroid{
+    max-width: 300px;
+    min-height: 300px;
+    
+    margin-bottom: 10px;
+}
+div.bugdroid{
+    margin: auto;
+
+}
+body {
+    margin: 0;
+    background-color: rgba(255, 234, 208, 0.59);
+}
+.oswald {
+    font-family: 'Oswald';
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin: 0;
+}
+.nav {
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(50, 133, 57), rgb(21, 85, 43));
+    height: auto;
+    padding: 20px;
+}
+.home {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.home > a {
+    text-decoration: none;
+    color: rgba(72, 223, 110, 0.7);
+    margin: 10px;
+}
+.home > a:hover {
+    text-decoration: underline;
+    border-radius: 6px;
+    transition: 0.2s;
+    color: rgba(101, 139, 101, 0.87);
+}
+p {
+    line-height: 1.7em;
+    padding: 10px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    text-indent: 10px;
+}
+main {
+    background-color: white;
+    max-width: 95%; /* Limita o tamanho da largura */
+    height: auto; /* Ajusta a altura */
+    padding: 20px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 11px rgb(57, 75, 79);
+}
+#principal {
+    color: rgb(43, 75, 43);
+    font-size: 1.8em;
+    font-family: 'Sour Gummy';
+    text-align: center;
+}
+.text {
+    font-family: sans-serif;
+    text-indent: 10px;
+}
+.versao {
+    background: linear-gradient(to right, rgba(131, 219, 131, 0.636), white);
+    font-family: 'Sour Gummy';
+    font-size: 1.4em;
+}
+span {
+    color: green;
+    font-weight: bold;
+    background-color: rgb(176, 217, 180);
+    border-radius: 4px;
+}
+span > a {
+    text-decoration: none;
+}
+span > a:hover {
+    text-decoration: underline;
+}
+.imagem {
+    max-width: 100%; /* Ajusta ao tamanho do contêiner */
+    height: auto; /* Mantém proporção */
+    display: block;
+    margin: auto;
+}
+.video {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.482);
+    max-width: 100%; /* Ajusta ao tamanho do contêiner */
+    margin: 20px auto;
+    box-shadow: 2px 2px 12px black;
+    position: relative;
+    padding-top: 56.25%; /* Proporção 16:9 */
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.especial {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+#ponto {
+    background-color: rgba(78, 113, 78, 0.492);
+    margin: 6px;
+    border-radius: 6px;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .imagem {
+        width: 100%; /* Imagem ocupa toda a largura */
+    }
+
+    #principal {
+        font-size: 1.5em;
+    }
+}
+
+/* Para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    .nav {
+        padding: 10px;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    #principal {
+        font-size: 1.2em;
+    }
+}

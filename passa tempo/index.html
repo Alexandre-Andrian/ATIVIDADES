@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body{
+                background-color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1><center>Minha Vida É um Filme</center> </h1>
+    <hr>
+<h2>É sal</h2>
+<p>Tu vai acabar tomando um sutooo olha o caminhar do elemento</p>
+<h2>É o Tue </h2>
+<p>ela me chupa ate eu ficar roxo ela n sabe quando o tempo muda</p>
+
+    
+<button id="mostrar-imagem-btn">333</button>
+
+<!-- Aqui está a imagem, inicializada como invisível -->
+<img id="imagem" src="tuezin.jpeg" alt="Imagem que aparece ao clicar" style="display: none; margin-top: 100px; max-width: 100%;" />
+
+<script>
+    document.getElementById('mostrar-imagem-btn').addEventListener('click', function() {
+        const imagem = document.getElementById('imagem');
+        imagem.style.display = 'block'; // Mostra a imagem
+    });
+</script>
+
+
+
+</body>
+</html>

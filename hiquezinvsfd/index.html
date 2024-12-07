@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuro</title>
+    <style>
+        body{
+            background-color: black;
+
+        }
+
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      <h1><center>Para você! 🤫</center></h1>
+      <center><button id="mostrar-imagem-btn">???</button></center>
+
+      <!-- Aqui está a imagem, inicializada como invisível -->
+      <center><img id="imagem" src="clt.jpeg" alt="Imagem que aparece ao clicar" style="display: none; margin-top: 100px; max-width: 100%;" /></center>
+      
+      <!-- Frase que aparecerá após o clique -->
+      <center><p id="frase" style="display: none; margin-top: 20px;">Vai trabalhar desempregado</p></center>
+      
+      <script>
+          document.getElementById('mostrar-imagem-btn').addEventListener('click', function() {
+              const imagem = document.getElementById('imagem');
+              const frase = document.getElementById('frase');
+              
+              imagem.style.display = 'block'; // Mostra a imagem
+              frase.style.display = 'block';   // Mostra a frase
+          });
+      </script>
+      
+</body>
+</html>

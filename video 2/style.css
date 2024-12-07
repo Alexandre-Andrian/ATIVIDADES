@@ -1,0 +1,21 @@
+.alerta {
+    background-color: #ffdddd;
+    border: 1px solid rgb(251, 238, 238);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+body {
+    background-color: rgba(247, 246, 246, 0.99);
+}
+
+
+label{
+    font-family: arial;
+}

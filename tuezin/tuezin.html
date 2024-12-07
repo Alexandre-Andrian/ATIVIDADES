@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tuezin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link css rel="stylesheet" href="tuezinn.css">
+</head>
+<body>
+    <h1>Matuê &trade;</h1>
+
+    <p>Quando ela bater
+        cura, ela vai te levar
+        Vai mais um, é melhor<br>esperarm 
+        Porque quando a onda bater
+        Tu vai ter que aprender a surfar. Palavras de Matuê.
+                   &yen;
+    </p>
+    <hr>
+    
+   
+    
+    <button id="mostrar-imagem-btn">333</button>
+
+    <!-- Aqui está a imagem, inicializada como invisível -->
+    <img id="imagem" src="tuezin.jpeg" alt="Imagem que aparece ao clicar" style="display: none; margin-top: 20px; max-width: 100%;" />
+
+    <script>
+        document.getElementById('mostrar-imagem-btn').addEventListener('click', function() {
+            const imagem = document.getElementById('imagem');
+            imagem.style.display = 'block'; // Mostra a imagem
+        });
+    </script>
+</body>
+</html>
